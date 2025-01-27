@@ -1,0 +1,445 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* MAIN INVISIBLE CONTAINER THAT IS HANDLING 2 MAIN SECTIONS */
+#main-container{
+  /* border: 2px solid red; */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+/* LEFT PROFILE SECTION */
+#left-full-profile{
+  background-color: #1c1b1b;
+  border-radius: 20px;
+  height: auto;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  bottom:90.5rem;
+}
+
+/* PROFILE IMAGE */
+#image{
+  background: #282828;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  width: auto;
+  height: auto;
+}
+
+#image img{
+  height: 170px;
+  width: 180px;
+  border-radius: 50%;
+}
+
+/* NAME UNDER THE PROFILE PICTURE */
+.name-under-profile{
+  position: relative;
+  bottom: 30px;
+}
+
+#web-developer-title{
+    background: #282828;
+    border-radius: 5px;
+    position: relative;
+    bottom: 45px;
+    height: 7px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+/* On a road to become a full stack developer */
+#sub-title{
+  position: relative;
+  bottom: 50px;
+}
+
+/* HORIZONTAL LINE */
+.hr-line{
+  border: 1px solid gold;
+  width: 200px;
+  position: relative;
+  bottom: 50px;
+}
+
+.contact-info{
+  margin-bottom: 13px;
+}
+
+/* Contact links */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.button svg path {
+  transition: 400ms;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.button:hover .text {
+  color: #181717;
+}
+
+.github:hover svg path {
+  fill: #181717;
+}
+.x-com:hover svg path {
+  fill: #181717;
+}
+
+/* Right Side Main Container */
+#right-full-content{
+  background-color: #1c1b1b;
+  border-radius: 20px;
+  height: auto;
+  width: 60rem;
+}
+
+
+
+/* NAVBAR */
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 22px;
+  background: #000;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.navbar.fixed-top {
+  position: fixed;
+  bottom: 34.8rem;
+  left: 24.4rem;
+  width: 57rem;
+  border-radius: 0;
+  z-index: 1000;
+}
+
+/* From Uiverse.io by Randdose */ 
+.nav-button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.7em 1em;
+  border: gold solid 0.15em;
+  border-radius: 10px;
+  color: gold;
+  font-size: 1em;
+  font-weight: 300;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  height: 20px;
+  width: 90px;
+}
+
+.nav-button p {
+  z-index: 1;
+}
+
+.nav-button:hover {
+  color: #212121;
+}
+
+.nav-button:active {
+  border-color: gold;
+}
+
+.nav-button::after, .nav-button::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: gold;;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.nav-button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.nav-button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.nav-button:hover:before {
+  transform: translateX(-1em);
+}
+
+.nav-button:hover:after {
+  transform: translateX(1em);
+}
+
+.nav-button:active:before,
+.nav-button:active:after {
+  background: gold;;
+}
+
+
+/* Home Container */
+.home-container{
+  background-color: black;
+  border-radius: 12px;
+  height: auto;
+  width: 57rem;
+  margin: 20px 20px 40px 20px;
+  padding: 10px;
+}
+
+.home-container span{
+  color: gold;
+}
+
+
+/* Skill Sets */
+.skill-sets{
+  background-color: black;
+  border-radius: 12px;
+  height: auto;
+  width: 57rem;
+  margin: 20px 20px 40px 20px;
+  padding: 10px;
+}
+
+#skill-rows{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Resume */
+.resume{
+  background-color: black;
+  border-radius: 12px;
+  height: auto;
+  width: 57rem;
+  margin: 20px 20px 40px 20px;
+  padding: 10px;
+  display: flex;
+}
+.cromone-exp{
+  margin-bottom: 30px;
+}
+
+.resume h3{
+  color: gold;
+}
+.resume span{
+  color: white;
+}
+.exp-date{
+  font-size: 17px;
+}
+.exp-date span{
+  color: gold;
+}
+
+.resume ul{
+  margin-right: 10px;
+}
+
+.side-exp-line{
+  border: 1px solid white;
+  height: 430px;
+  width: 0;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+.side-exp-line-circle{
+  background-color: gold;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 22px;
+  right: 5px;
+}
+#circle2{
+  top: 13rem;
+}
+
+/* Certificates */
+.certificate-container{
+  display: flex;
+}
+.side-certificate-line{
+  border: 1px solid white;
+  height: 310px;
+  width: 0;
+  margin-right: 10px;
+}
+
+#side-line-2 {
+  position: relative;
+  right: 12px;
+}
+#circle3{
+  top: 12.2rem;
+}
+
+.ccc-certificate{
+  margin-bottom: 50px;
+}
+
+
+/* Projects */
+.projects-container{
+  background-color: black;
+  border-radius: 12px;
+  height: auto;
+  width: 57rem;
+  margin: 20px 20px 40px 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.projects{
+  border: 1px solid white;
+  width: 400px;
+  height: 60px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.inside-project-box{
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+  color: #000;
+}
+
+
+/* Contact Form */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #aaaa04;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #9ba045;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #000000;
+  margin: 20px 20px 40px 20px;
+  padding: 10px;
+}
+
+/* Submit Button */
+/* From Uiverse.io by mobinkakei */ 
+.btn {
+  --color1: #f2d70f;
+  --color2: #929700;
+  perspective: 1000px;
+  padding: 1em 1em;
+  background: linear-gradient(var(--color1), var(--color2));
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  text-shadow: 0 10px 10px #000;
+  cursor: pointer;
+  transform: rotateX(70deg) rotateZ(30deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.btn::before {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: var(--color2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+
+.btn::after {
+  content: "";
+  width: 15px;
+  height: 100%;
+  background-color: var(--color1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateY(-90deg);
+  transform-origin: right;
+}
+
+.btn:hover {
+  transform: rotateX(30deg) rotateZ(0);
+}
